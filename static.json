@@ -1,6 +1,6 @@
 {
     "headers": {
-        "/": {
+        "/*": {
             "X-Author": "skaryagindevicemy",
             "Access-Control-Allow-Origin": "*"
         }, 
