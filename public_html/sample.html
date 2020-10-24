@@ -1,4 +1,4 @@
 var prop = 42;
 function task(x) {
-  return x * (prop * prop);
-}
+  return x * (this.prop * this.prop);
+};
