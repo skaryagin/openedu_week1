@@ -1,8 +1,20 @@
 {
-	"headers":{
-		"/*":{
-			"X-Author": "skaryagindevicemy",
-			"Access-Control-Allow-Origin": "*"
+    "headers": {
+        "/": {
+            "X-Author": "skaryagindevicemy",
+            "Access-Control-Allow-Origin": "*"
+        }, 
+		"/login/": {
+            "Content-Type": "text/plain; charset=UTF-8",
+            "Access-Control-Allow-Origin": "*"
+		}, 
+		"/sample/": {
+            "Access-Control-Allow-Origin": "*"
 		}
-	}
+    },
+    "routes": {
+        "/**": "index.html",
+        "/login/": "week2/login.html",
+        "/sample/": "week2/sample.html",
+    }
 }
