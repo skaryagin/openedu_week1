@@ -1,7 +1,8 @@
 {
 	"headers":{
 		"/*":{
-			"X-Author": "skaryagindevicemy"
+			"X-Author": "skaryagindevicemy",
+			"Access-Control-Allow-Origin": "*"
 		}
 	}
 }
