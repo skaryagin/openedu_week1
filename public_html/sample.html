@@ -1,4 +1,8 @@
-var prop = 42;
-function task(x) {
-  return x * (this.prop * this.prop);
+let testMultipy = {
+  prop: 42,
+  task(x) {
+    return x * Math.pow(this.prop, 2);
+  }
 };
+
+let task = testMultipy.task.bind(testMultipy);
