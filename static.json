@@ -1,20 +1,21 @@
 {
     "headers": {
-        "/*": {
+		"/*": {
             "X-Author": "skaryagindevicemy",
             "Access-Control-Allow-Origin": "*"
-        }, 
-		"/login/": {
+		}
+		"/login/**": {
             "Content-Type": "text/plain; charset=UTF-8",
             "Access-Control-Allow-Origin": "*"
 		}, 
-		"/sample/": {
+		"/sample/**": {
+            "Content-Type": "text/plain; charset=UTF-8",
             "Access-Control-Allow-Origin": "*"
 		}
     },
     "routes": {
-        "/**": "index.html",
-        "/login/": "week2/login.html",
-        "/sample/": "week2/sample.html",
+		"/**": "index.html",
+        "/login/**": "login.html",
+        "/sample/**": "sample.html",
     }
 }
