@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Практическое задание 3</title>
+		<meta charset="utf-8">
+		</head>
+		<body>
+			<article>
+				<div>
+					<input type="text" id="inp"/>
+					<button id="bt">Press me</button>
+				</div>
+			</article>
+			<script>
+  	document.querySelector('#bt')
+    .addEventListener('click', ({target:t}) => fetch(document.querySelector('#inp').value)
+		.then(res => res.text().then(x => document.querySelector('#inp').value = x ))
+		.catch(rej => console.log(rej))
+	)
+	</script>
+</body>
+</html>

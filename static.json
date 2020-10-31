@@ -8,13 +8,17 @@
             "Content-Type": "text/plain; charset=UTF-8",
             "Access-Control-Allow-Origin": "*"
 		}, 
-		"/sample/**": {
+		"/promise/**": {
+            "Access-Control-Allow-Origin": "*"
+		}, 
+		"/fetch/**": {
             "Access-Control-Allow-Origin": "*"
 		}
     },
     "routes": {
         "/login/**": "login.html",
-        "/sample/**": "sample.html",
+        "/promise/**": "promise.html",
+        "/fetch/**": "fetch.html",
 		"/**": "index.html"
     }
 }
